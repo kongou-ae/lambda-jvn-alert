@@ -1,0 +1,36 @@
+{
+  "name": "lambda-jvn-alert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hundler.js",
+  "scripts": {
+    "test": "./node_modules/.bin/serverless invoke local -f alert",
+    "build": "./node_modules/.bin/babel src --out-dir ./",
+    "deploy": "./node_modules/.bin/sls deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongou-ae/lambda-jvn-alert.git"
+  },
+  "author": "kongou-ae",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kongou-ae/lambda-jvn-alert/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-3": "^6.22.0",
+    "serverless": "^1.6.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.9.0",
+    "moment": "^2.18.1",
+    "request": "^2.79.0",
+    "request-promise": "^4.2.0",
+    "xml2js": "^0.4.17",
+    "xml2json": "^0.11.0"
+  },
+  "homepage": "https://github.com/kongou-ae/lambda-jvn-alert#readme"
+}
